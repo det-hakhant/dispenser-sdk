@@ -35,3 +35,11 @@ $response = $dispenser->send('010203');
 echo $response;
 ```
 
+### Test
+
+```bash
+
+composer test
+
+```
+
