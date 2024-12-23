@@ -1,0 +1,35 @@
+{
+    "name": "hakhant/dispenser-sdk",
+    "description": "Easy to use package for communicating with fuel dispenser",
+    "type": "library",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Htet Aung Khant",
+            "email": "hakhant21@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hakhant\\Dispenser\\": "src"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.7",
+        "symfony/var-dumper": "^7.2"
+    },
+    "autoload-dev": {
+        "Hakhant\\Dispenser\\Tests\\": "tests"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest"
+    },
+    "minimum-stability": "stable",
+    "license": "MIT"
+}
