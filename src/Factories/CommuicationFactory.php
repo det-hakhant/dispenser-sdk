@@ -1,14 +1,14 @@
 <?php
 
-namespace Hakhant\Dispenser\Factories;
+namespace Hakhant\Dispensers\Factories;
 
-use Hakhant\Dispenser\Interfaces\CommunicationInterface;
+use Hakhant\Dispensers\Interfaces\CommunicationInterface;
 
 class CommuicationFactory
 {
     public static function create(string $type, array $config): CommunicationInterface 
     {
-        $className = 'Hakhant\Dispenser\Communications\\' . ucfirst($type) . 'Communication';
+        $className = 'Hakhant\Dispensers\Communications\\' . ucfirst($type) . 'Communication';
 
         if (!class_exists($className)) {
             throw new \Exception('Communication type not supported');

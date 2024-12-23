@@ -1,8 +1,8 @@
 <?php
 
-namespace Hakhant\Dispenser\Communications;
+namespace Hakhant\Dispensers\Communications;
 
-use Hakhant\Dispenser\Interfaces\CommunicationInterface;
+use Hakhant\Dispensers\Interfaces\CommunicationInterface;
 
 class EthernetCommunication implements CommunicationInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Hakhant\Dispenser\Interfaces;
+namespace Hakhant\Dispensers\Interfaces;
 
 interface ProtocolInterface
 {

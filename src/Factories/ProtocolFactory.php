@@ -1,9 +1,9 @@
 <?php
 
-namespace Hakhant\Dispenser\Factories;
+namespace Hakhant\Dispensers\Factories;
 
-use Hakhant\Dispenser\Interfaces\CommunicationInterface;
-use Hakhant\Dispenser\Interfaces\ProtocolInterface;
+use Hakhant\Dispensers\Interfaces\CommunicationInterface;
+use Hakhant\Dispensers\Interfaces\ProtocolInterface;
 
 class ProtocolFactory
 {
@@ -11,7 +11,7 @@ class ProtocolFactory
     {
         $protocol = ucfirst($protocol);
 
-        $class = "Hakhant\\Dispenser\\Protocols\\{$protocol}Protocol";
+        $class = "Hakhant\\Dispensers\\Protocols\\{$protocol}Protocol";
 
         if (!class_exists($class)) {
             throw new \Exception("{$protocol} protocol is not supported.");

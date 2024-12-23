@@ -1,9 +1,9 @@
 <?php
 
-namespace Hakhant\Dispenser\Protocols;
+namespace Hakhant\Dispensers\Protocols;
 
-use Hakhant\Dispenser\Utils\HasProtocol;
-use Hakhant\Dispenser\Interfaces\ProtocolInterface;
+use Hakhant\Dispensers\Utils\HasProtocol;
+use Hakhant\Dispensers\Interfaces\ProtocolInterface;
 
 class PrimeProtocol implements ProtocolInterface
 {

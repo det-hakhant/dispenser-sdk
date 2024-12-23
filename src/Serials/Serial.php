@@ -1,6 +1,6 @@
 <?php
 
-namespace Hakhant\Dispenser\Serials;
+namespace Hakhant\Dispensers\Serials;
 
 class Serial
 {

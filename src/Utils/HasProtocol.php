@@ -1,6 +1,6 @@
 <?php
 
-namespace Hakhant\Dispenser\Utils;
+namespace Hakhant\Dispensers\Utils;
 
 trait HasProtocol
 {

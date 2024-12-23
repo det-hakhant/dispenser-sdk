@@ -1,9 +1,9 @@
 <?php
 
-namespace Hakhant\Dispenser;
+namespace Hakhant\Dispensers;
 
-use Hakhant\Dispenser\Factories\ProtocolFactory;
-use Hakhant\Dispenser\Factories\CommuicationFactory;
+use Hakhant\Dispensers\Factories\ProtocolFactory;
+use Hakhant\Dispensers\Factories\CommuicationFactory;
 
 class Dispenser
 {

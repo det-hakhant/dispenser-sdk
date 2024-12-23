@@ -1,9 +1,9 @@
 <?php
 
-namespace Hakhant\Dispenser\Communications;
+namespace Hakhant\Dispensers\Communications;
 
-use Hakhant\Dispenser\Interfaces\CommunicationInterface;
-use Hakhant\Dispenser\Serials\Serial;
+use Hakhant\Dispensers\Interfaces\CommunicationInterface;
+use Hakhant\Dispensers\Serials\Serial;
 
 class SerialCommunication implements CommunicationInterface
 {

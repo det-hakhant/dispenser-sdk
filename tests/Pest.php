@@ -1,7 +1,7 @@
 <?php
 
-use Hakhant\Dispenser\Tests;
-use Hakhant\Dispenser\Utils\HasProtocol;
+use Hakhant\Dispensers\Tests;
+use Hakhant\Dispensers\Utils\HasProtocol;
 
 /*
 |--------------------------------------------------------------------------

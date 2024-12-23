@@ -1,11 +1,11 @@
 <?php
 
-use Hakhant\Dispenser\Dispenser;
-use Hakhant\Dispenser\Protocols\PrimeProtocol;
-use Hakhant\Dispenser\Factories\ProtocolFactory;
-use Hakhant\Dispenser\Protocols\RedstarProtocol;
-use Hakhant\Dispenser\Protocols\TatsunoProtocol;
-use Hakhant\Dispenser\Factories\CommuicationFactory;
+use Hakhant\Dispensers\Dispenser;
+use Hakhant\Dispensers\Protocols\PrimeProtocol;
+use Hakhant\Dispensers\Factories\ProtocolFactory;
+use Hakhant\Dispensers\Protocols\RedstarProtocol;
+use Hakhant\Dispensers\Protocols\TatsunoProtocol;
+use Hakhant\Dispensers\Factories\CommuicationFactory;
 
 beforeEach(function () {
     $this->config = [

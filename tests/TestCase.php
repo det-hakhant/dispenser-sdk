@@ -1,6 +1,6 @@
 <?php
 
-use Hakhant\Dispenser\Tests;
+use Hakhant\Dispensers\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 
