@@ -1,7 +1,6 @@
 <?php
 
 use Hakhant\Dispensers\Tests;
-use Hakhant\Dispensers\Utils\HasProtocol;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +13,7 @@ use Hakhant\Dispensers\Utils\HasProtocol;
 |
 */
 
-uses(HasProtocol::class)->in('Unit');
+// uses(HasProtocol::class)->in('Unit');
 
 /*
 |--------------------------------------------------------------------------

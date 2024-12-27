@@ -4,10 +4,7 @@ namespace Hakhant\Dispensers\Interfaces;
 
 interface ProtocolInterface
 {
-    public function parseFrame(string $response);
+    public function readFrame(array $frame);
 
-    public function buildFrame(string $frame);
-
-    public function handle(string $frame);
-
+    public function sendFrame(string $address, string $function, array $data);
 }

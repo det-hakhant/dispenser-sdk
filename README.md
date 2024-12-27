@@ -21,8 +21,8 @@ use Hakhant\Dispensers\Dispenser;
 // $protocol = 'redstar'; ( Brand Name )
 // config for serial communication
 $config = [
-        'port' => '/dev/tty',
-        'rate' => 9600,
+        'port' => '/dev/cu.usbserial-0001',
+        'rate' => 115200,
         'parity' => 'none',    
         'length' => 8,
         'stop' => 1,
@@ -30,7 +30,7 @@ $config = [
 ];
 $dispenser = new Dispenser('serial', 'redstar', $config);
  
-$response = $dispenser->send('010203');
+$response = $dispenser->send('01', '01', ['01', '02', '03', '04']);
 
 echo $response;
 ```

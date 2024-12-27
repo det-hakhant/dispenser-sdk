@@ -2,6 +2,7 @@
 
 namespace Hakhant\Dispensers;
 
+use Exception;
 use Hakhant\Dispensers\Factories\ProtocolFactory;
 use Hakhant\Dispensers\Factories\CommuicationFactory;
 
@@ -16,8 +17,14 @@ class Dispenser
         $this->protocol = ProtocolFactory::create($protocol, $communication);
     }
 
-    public function send(string $message)
+    public function send(string $address, string $function, array $data)
     {
-        return $this->protocol->handle($message);
+        $frame = $this->protocol->sendFrame($address, $function, $data);
+
+        if(empty($frame)) {
+            return 'Frame is empty';
+        }
+        
+        return $this->protocol->readFrame($frame);
     }
 }
